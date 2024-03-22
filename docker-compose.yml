@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  nilmtk:
+    build: .
+    container_name: nilmtk
+    image: nilmtk
+    volumes:
+      - $PWD/notebooks:/workspace/notebooks
+      - $PWD/dataset:/workspace/dataset
+    environment:
+      - PASSWORD=nilm
+    ports:
+      - 8888:8888
+    platform: linux/amd64

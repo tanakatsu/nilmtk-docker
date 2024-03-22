@@ -1,0 +1,8 @@
+cvxpy==1.2.1
+Keras==2.4.0
+Keras-Preprocessing==1.1.2
+tensorboard==2.9.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.4.1
+tensorflow-estimator==2.4.0
