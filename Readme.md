@@ -20,11 +20,12 @@ $ ./run_server.sh
 
 Open your browser and navigate to `localhost:8888`.
 
-Default password of jupyter notebook is `nilm`.
-You can change the password by editing this shell script (run_server.sh).
+If you want to set password, you should edit `run_server.sh` and run it.
 
 ```
-docker run -e PASSWORD={PASSWORD_YOU_LIKE} --platform=linux/amd64 --rm -p 8888:8888 -v ./notebooks:/workspace/notebooks -v ./dataset:/workspace/dataset -it nilmtk
+docker run -e PASSWORD={PASSWORD_YOU_LIKE} --platform=linux/amd64 --rm -p 8888:8888 -v ./notebooks:/workspace/notebooks -v ./dataset:/workspace/dataset -it nilmtk-py311
+
+# docker run --platform=linux/amd64 --rm -p 8888:8888 -v ./notebooks:/workspace/notebooks -v ./dataset:/workspace/dataset -it nilmtk-py311
 ```
 
 As `notebooks` directory is mounted, you should put your notebooks under `notebooks`.
