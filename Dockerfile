@@ -1,4 +1,3 @@
-# FROM continuumio/anaconda3:2020.11
 FROM continuumio/anaconda3:2022.10
 
 RUN apt-get update && apt-get install -y \
