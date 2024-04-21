@@ -17,6 +17,9 @@ RUN conda init bash && . ~/.bashrc && conda activate nilmtk-env \
   && pip install --no-deps git+https://github.com/nilmtk/nilmtk-contrib \
   && pip install -r /tmp/requirements.nilmtk_contrib.txt
 
+# Overwrite files
+COPY files/nilmtk-contrib/nilmtk_contrib/disaggregate/* /opt/conda/envs/nilmtk-env/lib/python3.8/site-packages/nilmtk_contrib/disaggregate/
+
 # Activate environment
 ENV CONDA_DEFAULT_ENV ${env_name}
 
